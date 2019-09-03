@@ -29,4 +29,14 @@ client.on('message', msg => {
   }
 });
 
+/*send a message in a given time interval*/
+client.on('message', function(msg) {
+  if (msg.content === "$loop") {
+    var interval = setInterval(function() {
+      msg.channel.send('Hoy magrun na kayo @everyone');
+      .catch(console.error);
+    }, 1 * 1000);
+  }
+});
+
 client.login(process.env.BOT_TOKEN)
