@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 
 /*imbyerna*/
 client.on('message', msg => {
-  if(msg.content.toLowercase() === 'pakyu') {
+  if(msg.content.toLowerCase() === 'pakyu') {
     msg.channel.send('Pakyu ka rin');
   }
 });
