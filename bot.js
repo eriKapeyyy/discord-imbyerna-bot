@@ -14,7 +14,7 @@ client.on('message', msg => {
 
 /*new member server*/
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+  const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member}`);
 });
