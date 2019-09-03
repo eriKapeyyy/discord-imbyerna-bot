@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
+const channel = member.guild.channels.find(ch => ch.name === 'general');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -14,7 +15,6 @@ client.on('message', msg => {
 
 /*new member server*/
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member}`);
 });
