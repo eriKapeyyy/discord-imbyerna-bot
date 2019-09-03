@@ -2,13 +2,13 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`)
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
 /*attendance*/
 client.on('message', msg => {
   if(msg.content === '!present') {
-    msg.reply('you already have attendance for today!')
+    msg.reply('you already have attendance for today!');
   }
 });
 
@@ -21,8 +21,8 @@ client.on('guildMemberAdd', member => {
 
 /*imbyerna*/
 client.on('message', msg => {
-  if(msg.content === 'Pakyu' || msg.content === 'pakyu') {
-    msg.reply('Pakyu ka rin')
+  if(msg.content.toLowercase() === 'pakyu') {
+    msg.channel.send('Pakyu ka rin');
   }
 });
 
