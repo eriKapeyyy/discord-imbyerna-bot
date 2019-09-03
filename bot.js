@@ -33,7 +33,7 @@ client.on('message', msg => {
 client.on('message', function(msg) {
   if (msg.content === "$loop") {
     var interval = setInterval(function() {
-      msg.channel.send('Hoy magrun na kayo @everyone');
+      msg.channel.send('Hoy magrun na kayo @everyone')
       .catch(console.error);
     }, 1 * 1000);
   }
