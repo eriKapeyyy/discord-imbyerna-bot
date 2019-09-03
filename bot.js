@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const channel = member.guild.channels.find(ch => ch.name === 'general');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -15,6 +14,7 @@ client.on('message', msg => {
 
 /*new member server*/
 client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member}`);
 });
@@ -29,7 +29,7 @@ client.on('message', msg => {
   }
 });
 
-/*send a message in a given time interval*/
+/*send a message in a given time interval
 client.on('message', function(msg) {
   if (msg.content === "$loop") {
     var interval = setInterval(function() {
@@ -37,6 +37,6 @@ client.on('message', function(msg) {
       .catch(console.error);
     }, 1 * 1000);
   }
-});
+});*/
 
 client.login(process.env.BOT_TOKEN)
