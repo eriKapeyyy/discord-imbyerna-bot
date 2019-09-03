@@ -8,7 +8,7 @@ client.on('ready', () => {
 /*attendance*/
 client.on('message', msg => {
   if(msg.content === '!present') {
-    msg.reply('You already have attendance for today!')
+    msg.reply('you already have attendance for today!')
   }
 });
 
@@ -17,6 +17,13 @@ client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member}`);
+});
+
+/*imbyerna*/
+client.on('message', msg => {
+  if(msg.content === 'Pakyu' | 'pakyu') {
+    msg.reply('Pakyu ka rin')
+  }
 });
 
 client.login(process.env.BOT_TOKEN)
