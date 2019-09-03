@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 
 /*imbyerna*/
 client.on('message', msg => {
-  if(msg.content === 'Pakyu' | 'pakyu') {
+  if(msg.content === 'Pakyu' || msg.content === 'pakyu') {
     msg.reply('Pakyu ka rin')
   }
 });
