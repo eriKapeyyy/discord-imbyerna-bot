@@ -24,6 +24,9 @@ client.on('message', msg => {
   if(msg.content.toLowerCase() === 'pakyu') {
     msg.channel.send('Pakyu ka rin');
   }
+  else if(msg.content.toLowerCase() === 'tangina' || msg.content.toLowerCase() === 'tang ina' || msg.content.toLowerCase() === 'tangina mo' || msg.content.toLowerCase() === 'tang ina mo') {
+    msg.channel.send('Hoy tangina ka bawal magmura rito');
+  }
 });
 
 client.login(process.env.BOT_TOKEN)
