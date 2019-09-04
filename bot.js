@@ -27,6 +27,12 @@ client.on('message', msg => {
   else if(msg.content.toLowerCase() === 'tangina' || msg.content.toLowerCase() === 'tang ina' || msg.content.toLowerCase() === 'tangina mo' || msg.content.toLowerCase() === 'tang ina mo') {
     msg.channel.send('Hoy tangina ka bawal magmura rito');
   }
+  else if(msg.content.toLower() === 'mahal niya ba ako?' || msg.contenttoLowerCase() === 'mahal ba ko?' || msg.contenttoLowerCase() === 'mahal niya ba ko' || msg.contenttoLowerCase() === 'mahal ba ko' || msg.contenttoLowerCase() === 'mahal nya ba ko') {
+    msg.channel.send('Di ka niya mahal');
+  }
+  else if(msg.contenttoLowerCase() === 'iloveyou' || msg.contenttoLowerCase() === 'mahal kita' || msg.contenttoLowerCase() === 'i love you' || msg.contenttoLowerCase() === 'ily') {
+    msg.channel.send('Di kita mahal');
+  }
 });
 
 /*send a message in a given time interval
