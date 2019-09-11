@@ -38,6 +38,13 @@ client.on('message', msg => {
   }
 });
 
+/*display avatar*/
+client.on('message', message => {
+  if (message.content === 'ano avatar ko') {
+    message.reply(message.author.avatarURL);
+  }
+});
+
 /*send a message in a given time interval
 client.on('message', function(msg) {
   if (msg.content === "$loop") {
