@@ -39,9 +39,9 @@ client.on('message', msg => {
 });
 
 /*display avatar*/
-client.on('message', message => {
-  if (message.content === 'ano avatar ko') {
-    message.channel.send('Ayan na putangina ka\n' + message.author.avatarURL);
+client.on('message', msg => {
+  if (msg.content === '=avatar ' + '@' + msg.author.id) {
+    msg.channel.send('Ayan na putangina ka\n' + msg.author.displayAvatarURL);
   }
 });
 
