@@ -21,19 +21,22 @@ client.on('guildMemberAdd', member => {
 
 /*imbyerna*/
 client.on('message', msg => {
-  if(msg.content.toLowerCase() === 'pakyu') {
+  
+  var input = msg.content.toLowerCase();
+  
+  if(input === 'pakyu') {
     msg.channel.send('Pakyu ka rin');
   }
-  else if(msg.content.toLowerCase() === 'tangina' || msg.content.toLowerCase() === 'tang ina' || msg.content.toLowerCase() === 'tangina mo' || msg.content.toLowerCase() === 'tang ina mo') {
+  else if(input === 'tangina' || input === 'tang ina' || input === 'tangina mo' || input === 'tang ina mo') {
     msg.channel.send('Hoy tangina ka bawal magmura rito');
   }
-  else if(msg.content.toLowerCase() === 'mahal niya ba ako?' || msg.content.toLowerCase() === 'mahal ba ko?' || msg.content.toLowerCase() === 'mahal niya ba ko' || msg.content.toLowerCase() === 'mahal ba ko' || msg.content.toLowerCase() === 'mahal nya ba ko') {
+  else if(input === 'mahal niya ba ako?' || input === 'mahal ba ko?' || input === 'mahal niya ba ko' || input === 'mahal ba ko' || input === 'mahal nya ba ko') {
     msg.channel.send('Di ka niya mahal');
   }
-  else if(msg.content.toLowerCase() === 'iloveyou' || msg.content.toLowerCase() === 'mahal kita' || msg.content.toLowerCase() === 'i love you' || msg.content.toLowerCase() === 'ily') {
+  else if(input === 'iloveyou' || input === 'mahal kita' || input === 'i love you' || input === 'ily') {
     msg.channel.send('Di kita mahal');
   }
-  else if(msg.content.toLowerCase() === 'putangina'|| msg.content.toLowerCase() === 'putang ina' || msg.content.toLowerCase() === 'putangina mo' || msg.content.toLowerCase() === 'putang ina mo') {
+  else if(input === 'putangina'|| input === 'putang ina' || input === 'putangina mo' || input === 'putang ina mo') {
     msg.channel.send('Putangina mo rin inaano ka ba diyan gago ka');
   }
 });
