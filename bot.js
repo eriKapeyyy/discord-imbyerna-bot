@@ -23,9 +23,9 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   
   var input = msg.content.toLowerCase(); /*to lower case the whole string*/
-  var words = {"pakyu", "tangina", "putangina"};
+  /*var words = {"pakyu", "tangina", "putangina"};
   var inc = input.includes(words);
-  var i; /*index*/
+  var i; /*index*/*/
   
   /*for(i = 0; i < input.length; i++) {*/
     if(input === 'pakyu') {
