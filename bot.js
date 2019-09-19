@@ -23,27 +23,22 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   
   var input = msg.content.toLowerCase(); /*to lower case the whole string*/
-  /*var words = {"pakyu", "tangina", "putangina"};
-  var inc = input.includes(words);
-  var i; /*index*/*/
-  
-  /*for(i = 0; i < input.length; i++) {*/
-    if(input === 'pakyu') {
-      msg.channel.send('Pakyu ka rin');
-    }
-    else if(input === 'tangina' || input === 'tang ina' || input === 'tangina mo' || input === 'tang ina mo') {
-      msg.channel.send('Hoy tangina ka bawal magmura rito');
-    }
-    /*else if(inc === 'mahal niya ba ako?' || inc === 'mahal ba ko?' || inc === 'mahal niya ba ko' || inc === 'mahal ba ko' || inc === 'mahal nya ba ko') {
-      msg.channel.send('Di ka niya mahal');
-    }
-    else if(inc === 'iloveyou' || inc === 'mahal kita' || inc === 'i love you' || inc === 'ily') {
-      msg.channel.send('Di kita mahal');*/
-    }
-    else if(input === 'putangina'|| input === 'putang ina' || input === 'putangina mo' || input === 'putang ina mo') {
-      msg.channel.send('Putangina mo rin inaano ka ba diyan gago ka');
-    }
-  /*}*/
+
+  if(input === 'pakyu') {
+    msg.channel.send('Pakyu ka rin');
+  }
+  else if(input === 'tangina' || input === 'tang ina' || input === 'tangina mo' || input === 'tang ina mo') {
+    msg.channel.send('Hoy tangina ka bawal magmura rito');
+  }
+  else if(input === 'mahal niya ba ako?' || input === 'mahal ba ko?' || input === 'mahal niya ba ko' || input === 'mahal ba ko' || input === 'mahal nya ba ko') {
+    msg.channel.send('Di ka niya mahal');
+  }
+  else if(input === 'iloveyou' || input === 'mahal kita' || input === 'i love you' || input === 'ily') {
+    msg.channel.send('Di kita mahal');*/
+  }
+  else if(input === 'putangina'|| input === 'putang ina' || input === 'putangina mo' || input === 'putang ina mo') {
+    msg.channel.send('Putangina mo rin inaano ka ba diyan gago ka');
+  }
 });
 
 /*display avatar*/
