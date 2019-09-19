@@ -34,7 +34,7 @@ client.on('message', msg => {
     msg.channel.send('Di ka niya mahal');
   }
   else if(input === 'iloveyou' || input === 'mahal kita' || input === 'i love you' || input === 'ily') {
-    msg.channel.send('Di kita mahal');*/
+    msg.channel.send('Di kita mahal');
   }
   else if(input === 'putangina'|| input === 'putang ina' || input === 'putangina mo' || input === 'putang ina mo') {
     msg.channel.send('Putangina mo rin inaano ka ba diyan gago ka');
