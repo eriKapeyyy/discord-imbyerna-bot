@@ -39,6 +39,9 @@ client.on('message', msg => {
   else if(input === 'putangina'|| input === 'putang ina' || input === 'putangina mo' || input === 'putang ina mo') {
     msg.channel.send('Putangina mo rin inaano ka ba diyan gago ka');
   }
+  else if(input === 'fancy') {
+    msg.channel.send('youuu');
+  }
 });
 
 /*display avatar*/
