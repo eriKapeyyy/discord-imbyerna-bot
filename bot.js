@@ -71,7 +71,7 @@ client.on('message', function(msg) {
 const {
     prefix,
     token
-} = require('./config.json');
+} = require('./package.json');
 const ytdl = require('ytdl-core');
 const queue = new Map();
 
