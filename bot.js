@@ -42,6 +42,9 @@ client.on('message', msg => {
   else if(input === 'gago' || input === 'gago ka') {
     msg.channel.send('Mas gago ka ulul');
   }
+  else if(input === 'leche' || input == 'leche ka') {
+    msg.channel.send('Pakyu mas leche ka');
+  }
   else if(input === 'fancy') {
     msg.channel.send('youuu');
   }
