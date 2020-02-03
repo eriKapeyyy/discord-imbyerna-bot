@@ -51,6 +51,9 @@ client.on('message', msg => {
   else if(input === 'you make me') {
     msg.channel.send('feel special');
   }
+  else if(input === 'Cute ako' || input === 'cute ako' || input === 'Cute ko' || input === 'cute ko') {
+    msg.channel.send('Ulol feeler ka');
+  }
 });
 
 /*display avatar*/
