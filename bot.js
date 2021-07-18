@@ -24,7 +24,7 @@ client.on('message', msg => {
   
   var input = msg.content.toLowerCase(); /*to lower case the whole string*/
 
-  if(input === str.includes("pakyu")) {
+  if(input = msg.includes("pakyu")) {
     msg.channel.send('Pakyu ka rin');
   }
   else if(input === 'tangina' || input === 'tang ina' || input === 'tangina mo' || input === 'tang ina mo') {
