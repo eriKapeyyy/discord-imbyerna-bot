@@ -23,9 +23,8 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   
   var input = msg.content.toLowerCase(); /*to lower case the whole string*/
-  let w;
 
-  if(w = input.includes("pakyu")) {
+  if(input === 'pakyu' || input === 'pakyu ka') {
     msg.channel.send('Pakyu ka rin');
   }
   else if(input === 'tangina' || input === 'tang ina' || input === 'tangina mo' || input === 'tang ina mo') {
